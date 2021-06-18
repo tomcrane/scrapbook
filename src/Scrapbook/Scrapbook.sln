@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scrapbook", "Scrapbook.csproj", "{DAC2686F-13F7-4664-910A-EA13F498E1B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IIIF", "..\..\..\..\wellcomecollection\iiif-builder\src\Wellcome.Dds\IIIF\IIIF.csproj", "{90CBBF4E-4180-4779-B769-83D37E64F214}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAC2686F-13F7-4664-910A-EA13F498E1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC2686F-13F7-4664-910A-EA13F498E1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC2686F-13F7-4664-910A-EA13F498E1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC2686F-13F7-4664-910A-EA13F498E1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90CBBF4E-4180-4779-B769-83D37E64F214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90CBBF4E-4180-4779-B769-83D37E64F214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90CBBF4E-4180-4779-B769-83D37E64F214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90CBBF4E-4180-4779-B769-83D37E64F214}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
