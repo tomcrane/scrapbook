@@ -45,7 +45,7 @@ namespace Scrapbook
 
         private async Task<StructureBase> MakeManifest(string title, string locale, string[][] values)
         {
-            var manifest = new Manifest()
+            var manifest = new Manifest
             {
                 Label = new LanguageMap(locale, title)
             };
