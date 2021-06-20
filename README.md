@@ -20,6 +20,10 @@ you'll get redirected to a IIIF Manifest (after some churning):
 
 ![image](https://user-images.githubusercontent.com/1443575/122679257-0fa1ad00-d1e2-11eb-8fa1-49067ffc8d51.png)
 
+Here's the manifest it makes:
+
+https://iiifscraps.azurewebsites.net/1i9SwT0-waIuw1vN-6hpGqVdo7pvFh5HoBLNsAXTteM4
+
 You can then load this into IIIF viewers:
 
 ![image](https://user-images.githubusercontent.com/1443575/122679309-3b249780-d1e2-11eb-9cb7-cafde5a3ab3d.png)
