@@ -38,6 +38,7 @@ namespace Scrapbook
             {
                 endpoints.MapGet("{**identifier}", async context =>
                 {
+                    context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
                     var reader = app.ApplicationServices.GetService<SheetReader>();
                     var identifier = context.Request.RouteValues["identifier"] as string;
                     if ("favicon.ico" == identifier)
@@ -53,7 +54,9 @@ namespace Scrapbook
                             context.Response.Redirect($"/{sheetId}");
                             return;
                         }
-                        var iiif = await reader.GetManifest(sheetId);
+
+                        var manifestUrl = context.Request.GetDisplayUrl();
+                        var iiif = await reader.GetManifest(sheetId, manifestUrl);
                         if (iiif == null)
                         {
                             context.Response.StatusCode = 404;
@@ -62,7 +65,6 @@ namespace Scrapbook
                         else
                         {
                             context.Response.ContentType = reader.ContentType;
-                            iiif.Id = context.Request.GetDisplayUrl();
                             await context.Response.WriteAsync(iiif.AsJson());
                         }
                     }
